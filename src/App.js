@@ -38,7 +38,7 @@ import Comments from "./adminComponents/comments/CommentsView";
 
 export const exampleContext = React.createContext({value: 0});
 
-axios.defaults.baseURL = 'http://localhost:4000';
+axios.defaults.baseURL = 'https://web-dev-online-shop-backend.herokuapp.com/';
 axios.interceptors.request.use(function (config) {
     // Do something before request is sent
     // console.log('INT->', config);
