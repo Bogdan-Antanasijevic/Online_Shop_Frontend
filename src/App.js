@@ -64,7 +64,7 @@ function App() {
 
     const handleUserLogin = () => {
         if (!localStorage.hasOwnProperty('user')) {
-            // navigate('/auth');
+            navigate('/auth');
         } else {
             dispatch(setUser(JSON.parse(localStorage.getItem('user'))))
         }
