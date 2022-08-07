@@ -24,7 +24,7 @@ function OrderProcessStepOne() {
                     <td>
                         <img src={item.imgUrl} alt={item.title}/>
                     </td>
-                    <td>{item.title}</td>
+                    <td className="td-title">{item.title}</td>
                     <td>
                         <FaMinusCircle className="mx-2" onClick={() => handleShopCartCount(index, false)} />
                         {item.count}

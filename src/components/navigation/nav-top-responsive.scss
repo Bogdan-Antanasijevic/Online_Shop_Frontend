@@ -53,6 +53,18 @@
         }
       }
     }
+    .items-wrapper{
+      text-align: center;
+      img{
+        width: 40%;
+      }
+      h5{
+        font-size: 1rem;
+      }
+      .remove-icon-wrapper{
+        justify-content: center;
+      }
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -61,7 +73,12 @@
     .nav-bar-info{
       display: flex;
       flex-direction: column;
+
+      .info-email-currency{
+        border-right: none ;
+      }
     }
+
     .nav-bar-middle{
       .middle-search-cart{
         justify-content: center;
@@ -70,7 +87,7 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
 
   .nav-bar-middle{
     display: flex;
@@ -78,7 +95,7 @@
     align-items: center;
     .middle-search-cart{
       display: flex;
-      flex-direction: column;
+      flex-direction: inherit;
       justify-content: center;
       align-items: center;
       .middle-search{
@@ -87,15 +104,59 @@
       }
       .middle-cart{
         width: fit-content;
-        margin-top: 10px;
+        margin-top: -1px;
         padding: 5px;
         border-radius: 5px;
+      }
+      .shop-cart-sum{
+        width: 300px;
+        height: 300px;
+        right: 20px;
+
+        .items-wrapper{
+          height: 220px;
+        }
+        .order-btn-wrapper{
+          height: 65px;
+        }
+        .shop-cart-item{
+          text-align: center;
+
+          .remove-icon-wrapper{
+            justify-content: center;
+          }
+          h5{
+            font-size: 1rem;
+          }
+        }
       }
     }
   }
   .nav-bar-info{
     .info-email-currency{
       font-size: 15px;
+    }
+  }
+}
+@media only screen and (max-width: 420px) {
+
+  .nav-bar-wrapper{
+    .nav-bar-info{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .info-email-currency{
+        border-right: none ;
+      }
+    }
+    .nav-bar-middle{
+      .middle-search-cart{
+        .middle-cart{
+          margin-left: 3px;
+        }
+      }
     }
   }
 }

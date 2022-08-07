@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import './Pagination.scss'
+import './Pagination-responsive.scss'
 
 export const itemsPerPageList = [2,4,6,8];
 

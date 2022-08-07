@@ -1,6 +1,7 @@
 import OrderProcessStepOne from "./components/OrderProcessStepOne";
 import React, { useEffect, useState } from "react";
-import './order-process.scss'
+import './order-process.scss';
+import './order-process-responsive.scss';
 import { useDispatch, useSelector } from "react-redux";
 import OrderProcessStepTwo from "./components/OrderProcessStepTwo";
 import StripeElements from "./components/OrderProcessStepTree";
